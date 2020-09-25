@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "rules": {
+    "eqeqeq": "error",
+    "no-shadow": "error",
+    "valid-jsdoc": [
+      "error",
+      {
+        "requireReturn": false,
+        "requireParamDescription": false,
+        "requireReturnDescription": false
+      }
+    ],
+    "no-trailing-spaces": "error",
+    "indent": [
+      "error",
+      2
+    ],
+    "prefer-destructuring": "error",
+    "prefer-arrow-callback": "error",
+    "comma-style": [
+      "error",
+      "last"
+    ],
+    "keyword-spacing": "error",
+    "space-before-function-paren": [
+      "error",
+      {
+        "named": "never"
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "no-eval": "error"
+  }
+}
