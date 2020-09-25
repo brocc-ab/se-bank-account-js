@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brocc/se-bank-account-js.git"
+    "url": "git+https://github.com/brocc-ab/se-bank-account-js.git"
   },
   "keywords": [
     "validate",
@@ -22,9 +22,9 @@
   "author": "Brocc AB",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brocc/se-bank-account-js/issues"
+    "url": "https://github.com/brocc-ab/se-bank-account-js/issues"
   },
-  "homepage": "https://github.com/brocc/se-bank-account-js",
+  "homepage": "https://github.com/brocc-ab/se-bank-account-js",
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^7.9.0",
