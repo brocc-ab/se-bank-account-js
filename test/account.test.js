@@ -11,12 +11,20 @@ const banks = [
     account: '9550-0100000',
   },
   {
+    name: 'Aion Bank SA',
+    account: '9580-1000100',
+  },
+  {
     name: 'BlueStep Finans',
     account: '9680-0000000',
   },
   {
     name: 'BNP Paribas SA',
     account: '9470-1000010',
+  },
+  {
+    name: 'Citibank',
+    account: '9040-1000100',
   },
   {
     name: 'Danske Bank',
@@ -59,6 +67,10 @@ const banks = [
     account: '9390-0000001'
   },
   {
+    name: 'Lunar Bank A/S',
+    account: '9710-0000000',
+  },
+  {
     name: 'Lån & Spar Bank Sverige',
     account: '9630-0000001',
   },
@@ -77,6 +89,10 @@ const banks = [
   {
     name: 'MedMera Bank',
     account: '9650-1000000',
+  },
+  {
+    name: 'Multitude Bank plc',
+    account: '9070-0000100',
   },
   {
     name: 'Nordax Bank',
