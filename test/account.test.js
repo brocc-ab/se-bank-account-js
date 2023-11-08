@@ -208,6 +208,15 @@ const banks = [
   },
 ];
 
+const invalidAccounts = [
+  '0000-0000000',
+  '1400-00010001234',
+  '2000-10000040',
+  '3301-010000099',
+  '3410-0100000000000000000',
+  '4000-10000003333'
+];
+
 describe('test bank account numbers', () => {
   it('should be valid bank account numbers', () => {
     banks.forEach(bank => {
@@ -222,9 +231,11 @@ describe('test bank account numbers', () => {
     });
   });
 
-  it('should be invalid bank account number', () => {
-    const acc = account('0000-0000000');
+  it('should be invalid bank account numbers', () => {
+    invalidAccounts.forEach(accountNumber => {
+      const acc = account(accountNumber);
 
-    expect(acc).to.be.false;
+      expect(acc).to.be.false;
+    })
   });
 });
