@@ -11,12 +11,20 @@ const banks = [
     account: '9550-0100000',
   },
   {
+    name: 'Aion Bank SA',
+    account: '9580-1000100',
+  },
+  {
     name: 'BlueStep Finans',
     account: '9680-0000000',
   },
   {
     name: 'BNP Paribas SA',
     account: '9470-1000010',
+  },
+  {
+    name: 'Citibank',
+    account: '9040-1000100',
   },
   {
     name: 'Danske Bank',
@@ -59,6 +67,10 @@ const banks = [
     account: '9390-0000001'
   },
   {
+    name: 'Lunar Bank A/S',
+    account: '9710-0000000',
+  },
+  {
     name: 'Lån & Spar Bank Sverige',
     account: '9630-0000001',
   },
@@ -77,6 +89,10 @@ const banks = [
   {
     name: 'MedMera Bank',
     account: '9650-1000000',
+  },
+  {
+    name: 'Multitude Bank plc',
+    account: '9070-0000100',
   },
   {
     name: 'Nordax Bank',
@@ -192,6 +208,15 @@ const banks = [
   },
 ];
 
+const invalidAccounts = [
+  '0000-0000000',
+  '1400-00010001234',
+  '2000-10000040',
+  '3301-010000099',
+  '3410-0100000000000000000',
+  '4000-10000003333'
+];
+
 describe('test bank account numbers', () => {
   it('should be valid bank account numbers', () => {
     banks.forEach(bank => {
@@ -206,9 +231,11 @@ describe('test bank account numbers', () => {
     });
   });
 
-  it('should be invalid bank account number', () => {
-    const acc = account('0000-0000000');
+  it('should be invalid bank account numbers', () => {
+    invalidAccounts.forEach(accountNumber => {
+      const acc = account(accountNumber);
 
-    expect(acc).to.be.false;
+      expect(acc).to.be.false;
+    });
   });
 });
