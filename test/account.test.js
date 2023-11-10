@@ -236,6 +236,6 @@ describe('test bank account numbers', () => {
       const acc = account(accountNumber);
 
       expect(acc).to.be.false;
-    })
+    });
   });
 });

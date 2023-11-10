@@ -41,6 +41,7 @@
       "error",
       "always"
     ],
-    "no-eval": "error"
+    "no-eval": "error",
+    "semi": "error"
   }
 }
