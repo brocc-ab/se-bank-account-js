@@ -1,25 +1,25 @@
 const { expect } = require('chai');
 const { mod10, mod11 } = require('../lib/utils');
 
-validMod10ExamplesFromBankgirot = [
+const validMod10ExamplesFromBankgirot = [
   '3316812057492',
   '55555551',
   '9912346',
 ]
 
-invalidatedMod10ExamplesFromBankgirot = [
+const invalidatedMod10ExamplesFromBankgirot = [
   '3316812057490',
   '55555550',
   '9912340',
 ]
 
-validMod11ExamplesFromBankgirot = [
+const validMod11ExamplesFromBankgirot = [
   '1912763608957',
   '241350',
   '324558',
 ]
 
-invalidatedMod11ExamplesFromBankgirot = [
+const invalidatedMod11ExamplesFromBankgirot = [
   '1912763608950',
   '241351',
   '324550',
